@@ -1,0 +1,112 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(25%);
+  position: fixed;
+  /* right: 0;
+  bottom: 0; */
+  /* min-width: 100%; 
+  min-height: 100%; */
+  z-index: -1;
+  
+}
+
+.navbar {
+  position:fixed;
+  top: 0;
+  right: 0;
+  padding-top: 2%;
+  padding-right: 2%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  display: inline;
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+  /* color:rgb(175, 178, 178); */
+
+}
+
+.navbar a {
+  color: rgb(180, 182, 182); /* Text color for the links */
+  text-decoration: none;
+  margin: 8px 20px;
+  transition: transform 0.3s;
+}
+
+.navbar a.try-now {
+  border: 1px solid white; 
+  padding: 10px 20px; 
+}
+
+.navbar a.hover {
+  padding: 10px 20px; 
+  transition: scale(1.2);
+}
+
+.logo-container {
+  float: left; /* Adjust spacing between logo and other links */
+}
+
+.logo {
+  height: 15px; /* Adjust the height of the logo as needed */
+  /* Add any additional styles for the logo */
+}
+.title {
+ position: fixed;
+ margin-top: 30%;
+ margin-left: 55%;
+}
+.header {
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+  font-size:12ch;
+  font-weight: bold;
+  color: rgb(136, 141, 141);
+  white-space: nowrap;
+  /* border-right: 0.05em solid rgb(136, 141, 141); */
+  animation: typing 2.5s steps(100, end), blink-caret 2s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(136, 141, 141);
+  }
+}
+
+.delay-1500 {
+  font-size: 2ch;
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+  color:rgb(3, 3, 3);
+  animation-name: move;
+  animation-delay: 150ms;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+}
+@keyframes move {
+  from { left: 0%; }
+  to { left: 30%; }
+}
+
+div {
+  position: relative;
+}
+
