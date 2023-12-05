@@ -1,10 +1,17 @@
 import "./App.css";
-import Home from "./components/Main";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Main from "./components/Main";
+import ImageOne from "./components/ImageOne";
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <Router>
+     <div>
+       <Routes>
+          <Route path="/" element={<Main></Main>} />
+          <Route path="/about" element={<ImageOne></ImageOne>} />
+        </Routes>
     </div>
+    </Router>
   );
 }
 
